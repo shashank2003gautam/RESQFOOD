@@ -1,0 +1,443 @@
+/* Add this CSS to your assets/css/receive.css file or include it in the head of your HTML */
+
+/* Add this CSS to your assets/css/receive.css file or include it in the head of your HTML */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('bg2.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: auto; /* Add overflow-y to enable vertical scrolling */
+  padding-top: 6.5rem; /* Adjust the padding to match the height of your header */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 4px rgba(146, 161, 176, 0.3);
+}
+
+/* Rest of your CSS styles... */
+
+
+/* Rest of your CSS styles... */
+
+
+html{
+    font-size: 62.5%;
+}
+
+/* Add this CSS to your assets/css/receive.css file or include it in the head of your HTML */
+
+/* Add this CSS to your assets/css/receive.css file or include it in the head of your HTML */
+
+table {
+  width: 80%; /* 10% padding on both right and left */
+  margin: 20px auto; /* Center the table */
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  background-color: #3fa33f; /* Background color */
+  font-family: 'Arial', sans-serif; /* Different text font */
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #fff; /* Text color for table content */
+}
+
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+tbody td:last-child {
+  text-align: center;
+}
+
+/* Add more styles as needed */
+
+
+/* HEADER */
+/* navbar starts */
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 10%;
+    height: 6.5rem;
+    background-color: #f5f5f5;
+    box-shadow: 0 3px 4px rgba(146, 161, 176, 0.3);
+  } */
+  
+  section {
+    min-height: 100vh;
+    padding: 2rem 9%;
+  }
+  
+  .heading {
+    font-size: 3.5rem;
+    color: rgb(32, 32, 32);
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .heading span {
+    color: rgb(115, 3, 167);
+  }
+  
+  header .logo {
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #0e2431;
+  }
+  
+  header .logo i {
+    font-size: 2.2rem;
+  }
+  
+  header .logo:hover {
+    color: #2b3dda;
+  }
+  
+  header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .navbar li {
+    margin-left: 2.5rem;
+  }
+  
+  header .navbar ul li a {
+    font-size: 1.57rem;
+    color: #0e2431;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+    transition: 0.2s;
+  }
+  
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover {
+    color: #2b84d2;
+    border-bottom: 0.2rem solid #2b84d2;
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+  
+  /* Add these styles to your existing CSS or create a new CSS file */
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Add some padding to the navbar */
+  }
+  
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-button,
+  .register-button {
+    margin-left: 10px;
+    /* Adjust the margin as needed */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .login-button {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .register-button {
+    background-color: #3fa33f;
+    color: #fff;
+  }
+  
+  .login-button:hover,
+  .register-button:hover {
+    background-color: #3fa33f;
+  }
+  
+  /* Adjust the hover effect colors as needed */
+  
+  
+  
+  /* navbar ends */
+
+
+  .receiveForm {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 10%;
+    /* margin: 20px auto; */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    /* Increase padding for larger input fields */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 18px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input:focus+span,
+textarea:focus+span,
+input:valid+span,
+textarea:valid+span {
+    font-size: 14px;
+    top: 0;
+    color: #4CAF50;
+}
+
+.receive-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.receive-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+/* FOOTER */
+.footer {
+    min-height: auto;
+    padding-top: 0;
+    background: rgb(0, 1, 43);
+  }
+  
+  .footer .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer .box-container .box {
+    flex: 1 1 25rem;
+    margin: 2.5rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    padding-bottom: 1rem;
+    font-weight: normal;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #ccc;
+    padding: 0.7rem 0;
+    text-transform: none;
+  }
+  
+  .footer .box-container .box p i {
+    padding-right: 1rem;
+    color: #3fa33f;
+  }
+  
+  .footer .box-container .box a {
+    font-size: 1.5rem;
+    color: rgb(238, 238, 238);
+    padding: 0.3rem 0;
+    display: block;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: #3fa33f;
+  }
+  
+  .footer .box-container .box .share {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    transition: 0.2s;
+    background: rgb(230, 230, 230);
+    color: #02094b;
+    border: none;
+  }
+  
+  .footer .box-container .box .share a:hover {
+    background: transparent;
+    transform: scale(0.98);
+    border: 0.1rem solid rgb(180, 178, 178);
+    color: #3fa33f;
+  }
+  
+  .footer .credit {
+    padding: 1rem 0 0 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    border-top: 0.1rem solid #fff3;
+  }
+  
+  .footer .credit a {
+    color: #3fa33f;
+  }
+  
+  /* '#2EB67D', '#ECB22E', '#E01E5B', '#36C5F0'  */
+  .footer .fa {
+    color: #3fa33f;
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+    animation: pound 0.35s infinite alternate;
+  }
+  
+  @-webkit-keyframes pound {
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes pound {
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .footer .box-container .box {
+      margin: 1.5rem;
+    }
+  
+    .footer .box-container .box p {
+      padding: 0.7rem;
+    }
+  
+    .footer .box-container .box .share a {
+      padding: 1.2rem;
+    }
+  }
+  
+  /* footer section ends */
+  
+  /* common media queries starts*/
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  
+    body {
+      padding-right: 0;
+    }
+  
+    section {
+      padding: 2rem;
+    }
+  }
+  
+  /* common media queries ends*/
+  
+  /* scroll top starts */
+  #scroll-top {
+    position: fixed;
+    top: -140%;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    background: #e01e5b;
+    color: rgb(13, 0, 44);
+    border-radius: 50%;
+    transition: 1s linear;
+    z-index: 1000;
+  }
+  
+  #scroll-top.active {
+    top: calc(100% - 6rem);
+  }
+  
+  /* scroll top ends */

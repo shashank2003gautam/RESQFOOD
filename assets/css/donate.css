@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #b14141;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background:#3fa33f;
+  color: #ffffff;
+}
+
+/* '#2EB67D', '#ECB22E', '#E01E5B', '#36C5F0'  */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #3fa33f;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #2b84d2;
+}
+
+/* pre loader start */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #256d7d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loader-container.fade-out {
+  top: -120%;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 10%;
+    height: 6.5rem;
+    background-color: #f5f5f5;
+    box-shadow: 0 3px 4px rgba(146, 161, 176, 0.3);
+  }
+  
+  section {
+    min-height: 100vh;
+    padding: 2rem 9%;
+  }
+  
+  .heading {
+    font-size: 3.5rem;
+    color: rgb(32, 32, 32);
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .heading span {
+    color: rgb(115, 3, 167);
+  }
+  
+  header .logo {
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #0e2431;
+  }
+  
+  header .logo i {
+    font-size: 2.2rem;
+  }
+  
+  header .logo:hover {
+    color: #2b3dda;
+  }
+  
+  header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .navbar li {
+    margin-left: 2.5rem;
+  }
+  
+  header .navbar ul li a {
+    font-size: 1.57rem;
+    color: #0e2431;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+    transition: 0.2s;
+  }
+  
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover {
+    color: #2b84d2;
+    border-bottom: 0.2rem solid #2b84d2;
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+  
+  /* Add these styles to your existing CSS or create a new CSS file */
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Add some padding to the navbar */
+  }
+  
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-button,
+  .register-button {
+    margin-left: 10px;
+    /* Adjust the margin as needed */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .login-button {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .register-button {
+    background-color: #3fa33f;
+    color: #fff;
+  }
+  
+  .login-button:hover,
+  .register-button:hover {
+    background-color: #3fa33f;
+  }
+  
+  /* Adjust the hover effect colors as needed */
+  
+  
+  
+  /* navbar ends */
+  
+  /* hamburger icon starts*/
+  #menu {
+    font-size: 3rem;
+    cursor: pointer;
+    color: rgb(24, 2, 63);
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    #menu {
+      display: block;
+    }
+  
+    header .navbar {
+      position: fixed;
+      top: 6.5rem;
+      right: -120%;
+      width: 75%;
+      height: 100%;
+      text-align: left;
+      align-items: flex-start;
+      background-color: #0e0f31;
+    }
+  
+    header .navbar ul {
+      flex-flow: column;
+      padding: 1rem;
+    }
+  
+    header .navbar ul li {
+      text-align: center;
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      width: 26rem;
+    }
+  
+    .btn:hover {
+      cursor: pointer;
+    }
+  
+    header .navbar ul li a {
+      display: block;
+      padding: 1rem;
+      text-align: left;
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover {
+      padding: 1rem;
+      color: #fff;
+      border-radius: 0.5rem;
+      border-bottom: 0.5rem solid #e01e5b;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      transform: rotate(180deg);
+    }
+  
+    header .navbar.nav-toggle {
+      right: 0;
+    }
+  }
+  
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpeg'); /* Set the background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.donationForm {
+    padding-top: 10%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(240, 237, 237);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Add other existing styles */
+
+
+.header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+

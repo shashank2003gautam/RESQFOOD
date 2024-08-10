@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>Login / Sign Up</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="/" class="logo">
+          <img src="assets/img/logo.png" alt="Logo" width="50" height="50">ResQFood
+        </a>
+      
+        <div id="menu" class="fas fa-bars"></div>
+      
+        <nav class="navbar">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="receive.html">Recieve</a></li>
+            <li><a href="#work">Food Map</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      <br>
+          <!-- Add login and register buttons -->
+          <div class="auth-buttons">
+            <a href="login.html" class="login-button">Login</a>
+          </div>
+        </nav>
+      </header>
+
+
+
+
+
+
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                <img src="assets/img/img-login.svg" alt="">
+            </div>
+
+            <div class="login__forms">
+                <form action="" class="login__registre" id="login-in">
+                    <h1 class="login__title">Sign In</h1>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Username" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+
+                    <a href="#" class="login__forgot">Forgot password?</a>
+
+                    <a href="#" class="login__button">Sign In</a>
+
+                    <div>
+                        <span class="login__account">Don't have an Account ?</span>
+                        <span class="login__signin" id="sign-up">Sign Up</span>
+                    </div>
+                </form>
+
+                <form action="" class="login__create none" id="login-up">
+                    <h1 class="login__title">Create Account</h1>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Username" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" placeholder="Email" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+
+                    <a href="#" class="login__button">Sign Up</a>
+
+                    <div>
+                        <span class="login__account">Already have an Account ?</span>
+                        <span class="login__signup" id="sign-in">Sign In</span>
+                    </div>
+
+                    <div class="login__social">
+                        <a href="#" class="login__social-icon"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-google'></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+
+    <!-- FOOTER -->
+
+   
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>ResQFood</h3>
+        <p>A mission-driven platform fostering local initiatives to eradicate hunger in India, empowering compassionate citizens with easy project creation, community collaboration, real-time impact tracking, educational resources, seamless donation integration, and timely notifications. Join the ResQFood community today to contribute to building a hunger-free nation through technology and compassion. <br /> <br /> </p>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <a href="donate.html"><i class="fas fa-chevron-circle-right"></i> donate</a>
+        <a href="receive.html"><i class="fas fa-chevron-circle-right"></i> receive</a>
+        <a href="map.html"><i class="fas fa-chevron-circle-right"></i> food map</a>
+        <a href="contact.html"><i class="fas fa-chevron-circle-right"></i> contact</a>
+     
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-phone"></i>+91 99289-67278</p>
+        <p> <i class="fas fa-envelope"></i>Cookie Byte</p>
+        <p> <i class="fas fa-map-marked-alt"></i>JIIT - Noida</p>
+        <div class="share">
+
+          <a href="https://www.linkedin.com/in/harsh-kumawat-069bb324b/" class="fab fa-linkedin" aria-label="LinkedIn"
+            target="_blank"></a>
+          <a href="https://github.com/harshk04/Food-Waste-Reduction" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+          <a href="mailto:kumawatharsh2004@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+          <!-- <a href="https://twitter.com/HarshKu03493352" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+          <a href="https://t.me/harsh_k04" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a> -->
+        </div>
+      </div>
+    </div>
+
+    <h1 class="credit">ⓒ Copyrights 2023 by <a href="https://www.linkedin.com/in/harsh-kumawat-069bb324b/"> Cookie Byte</a>
+      All Rights Reserved</h1>
+
+  </section>
+  <!-- footer section ends -->
+    <!-- footer section ends -->
+
+
+    <!-- scroll top btn -->
+    <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+    <!-- scroll back to top -->
+
+
+
+
+</body>
+
+</html>

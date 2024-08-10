@@ -1,0 +1,29 @@
+/* Set the map height explicitly to define the size of the div element */
+#map {
+    height: 400px; /* Adjust the height as needed */
+  }
+  
+  /* Center the map container */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% viewport height */
+    margin: 0;
+  }
+  
+  /* Style the "Find Location" button */
+  #find-location {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #find-location:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
